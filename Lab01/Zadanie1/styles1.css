@@ -1,0 +1,156 @@
+p:nth-child(1){
+    background-color: red;
+    font-family:'Times New Roman', Times, serif;
+    color:aqua;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+p:nth-child(2){
+    height: 90px;
+    width: 300px;
+    background-color: blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:beige;
+    font-size:17px;
+    overflow: scroll;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+p:nth-child(3){
+    height: 200px;
+    width: 600px;
+    background-color: green;
+    font-family:Arial, Helvetica, sans-serif;
+    color:brown;
+    font-size: 10px;
+    margin-left: 30px;
+}
+
+p:nth-child(4){
+    background-color: yellow;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blueviolet;
+    font-size: 12px;
+    margin-top:50px;
+    border: 1px solid red;
+    margin-bottom: 100px;
+}
+
+#pierwszaTabela {
+	border-collapse: collapse;
+    margin-bottom: 50px;
+}
+#pierwszaTabela td {
+	padding: 15px;
+}
+#pierwszaTabela thead td {
+	background-color: rgba(93, 93, 247, 0.973);
+	color: #ffffff;
+	width: 100px;
+    height:10px;
+	font-size: 13px;
+    border: 1px solid white;
+	border-bottom: 4px solid rgb(255, 255, 255);
+}
+#pierwszaTabela tbody td {
+	border: 1px solid #ffffff;
+}
+#pierwszaTabela tbody tr {
+	background-color: #dde0e2;
+}
+#pierwszaTabela tbody tr:nth-child(odd) {
+	background-color: #a5bbf8;
+}
+
+#drugaTabela{
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 60px;
+}
+
+#drugaTabela td{
+    padding: 15px;
+}
+
+#drugaTabela thead td {
+	background-color: rgba(99, 97, 79, 0.973);
+	color: #666666;
+	width: 100px;
+    height:10px;
+    border: 1px solid white;
+	border: 2px solid black;
+}
+#drugaTabela tbody td {
+	border: 2px solid #000000;
+}
+#drugaTabela tbody tr {
+	background-color: hsl(0, 0%, 69%);
+}
+
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    
+}
+
+.left-top {
+    float: left;
+    clear:both;
+}
+
+.right-bottom {
+    float: right;
+    clear:both;
+}
+
+#photosContainer{
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    margin-top:50px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image1{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.image2{
+    position: absolute;
+    top:250px;
+    left: 0px;
+}
+
+.image3{
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+
+#containerR{
+    position: relative;
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+}
+#eucountries{
+    background-color: blue;
+    position: absolute;
+    top: 15px;
+    
+}
+
+#ascountries{
+    background-color: red;
+    position: absolute;
+    top: 250px;
+}
