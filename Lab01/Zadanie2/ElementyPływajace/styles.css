@@ -1,0 +1,85 @@
+body {
+	font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.4em;
+}
+h2 {
+	font-size: 1.8em;
+	color: #000000;
+	border-bottom: 1px solid green;
+	width: 100%;
+
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #000000;
+}
+p, ul, ol {
+	font-size: 1.2em;
+	line-height: 130%;
+}
+
+ul {
+	color: #000000;
+	
+}
+
+#container{
+	background-color: #F8FAF1;
+	margin: auto;
+	width: 700px;
+	height: 960px;
+	padding-top: 15px;
+	
+}
+
+#container>header{
+	background-color: #294E56;
+	height: 45px;
+	border-top: 1px solid yellow;
+	border-bottom: 1px solid yellow;
+	display: flex;
+    align-items: center; 
+	padding-left: 25px;
+}
+
+#container>header>h1{
+	color: white;
+}
+article{
+	position: relative;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+aside{
+	background-color: #FBEF99;
+	border-top: 5px solid #FDD041;
+	border-left: 1px solid #FDD041;
+	border-right: 1px solid #FDD041;
+	border-bottom: 1px solid #FDD041;
+	width: 200px;
+	height: 320px;
+	float: right;
+	margin-left: 15px;
+	font-size: 105%;
+}
+aside h3{
+	position: relative;
+	text-align: center;;
+}
+
+section p{
+	font-size: 14px;
+}
+
+footer{
+	border-top: 1px solid rgb(150, 149, 149);
+}
+
+#container{
+	padding-left: 5px;
+	padding-right: 5px;
+}
