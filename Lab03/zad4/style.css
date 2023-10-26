@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*określenie szerokości i wysokości elementu
+     odnosi się do całkowitego obszaru zajmowanego przez element, obejmującego zawartość, wypełnienie i obramowanie*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 150vh;
+    background: linear-gradient(90deg, rgba(71, 161, 221, 0.695) 0%, rgba(71, 161, 221, 0.695) 100%),url('data/gory.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.logo-first-part{
+    font-weight: 600;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 250px 5px 100px;
+    background: #62B4E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.logo .logo-second-part{
+    font-weight: 400;
+}
+
+.navbar{
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 2em;
+}
+
+.dropdown a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10em;
+    margin-top: 5%;
+    text-align: start;
+}
+
+.dropdown .content a{
+    color: #62B4E3;
+    border-top: 1px solid #bec2c4;
+}
+
+.icon-right-open{
+    margin-left: 2.5em;
+}
+
+.dropdown:hover .content{
+    display:block;
+}
+
+.dropdown .content .icon-up-dir {
+    position: absolute; 
+    top: -1.3em;
+    left: 1.5em;
+    z-index: 2;
+}
+
+.log-in-button, .sign-up-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px; 
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .log-in-button {
+    color: #fff; 
+    border: 2px solid #fff; 
+  }
+  
+  .sign-up-button {
+    background-color: #fff; 
+    color: #62B4E3; 
+    border: 2px solid #fff; 
+  }
+  
+  @media screen and (max-width: 1300px) {
+    header {
+        display:flex;
+        flex-direction: column;
+        padding: 10px; 
+        align-items: center;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .log-in-button, .sign-up-button {
+        display: block;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .dropdown a{
+        display: block;
+        color: rgb(255, 255, 255);
+        text-decoration:none;
+        padding: 10px 15px;
+    }
+    
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .dropdown .content {
+        display: none;
+        position: static; 
+        background-color: white;
+        max-width: 10em;
+        text-align: start;
+        margin: auto;
+    }
+    
+    .dropdown .content a{
+        color: #62B4E3;
+        border-top: 1px solid #bec2c4;
+    }
+    
+    .icon-right-open{
+        margin-left: 2.5em;
+    }
+    
+    .dropdown:hover .content{
+        display:block;
+    }
+    
+    .dropdown .content .icon-up-dir {
+        display: none;
+    }
+    
+    .dropdown .content a {
+        display: block;
+        color: #62B4E3;
+        padding: 10px 15px;
+    }
+
+}
