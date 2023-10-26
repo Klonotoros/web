@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 125vh;
+    padding: 5px;
+}
+
+.container {
+    background-color: #254568;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.battery {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(5, 209, 5);
+    margin-top: 100%;
+}
+
+.dot:nth-child(1){
+    margin-top: 0;
+}
+
+.dot:nth-last-child(n+5) {
+    background-color: rgb(180, 178, 178);
+}
+
+.signal-dot:nth-child(1) {
+    margin-top: 0;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.button:nth-child(-n+2){
+    background-color: white;
+}
+
+.button:nth-child(3){
+    background-color: red;
+}
+
+.main-video {
+    height: 100%;
+}
+
+.corner-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+
